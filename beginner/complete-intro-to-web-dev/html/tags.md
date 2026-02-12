@@ -12,6 +12,19 @@ The basic building block of an HTML document is the tag. A tag desicribes the co
 
 ## Mental Model
 
+HTML is a document structure tree, tags are the nodes in that tree.
+
+```
+Document
+ ├── Header
+ ├── Main
+ │    ├── Article
+ │    │     ├── Heading
+ │    │     └── Paragraph
+ │    └── Sidebar
+ └── Footer
+```
+
 ## Syntax/Structure
 
 - Headings (h1-h6): h1 is treated as the main heading, other low-ranking headings signify subheadings and sections.
@@ -86,10 +99,11 @@ The basic building block of an HTML document is the tag. A tag desicribes the co
 </ul>
 ```
 
-- Button (button): can be used by JavaScript to respond to a user clicking it. It is useful for submitting form data. 
+- Button (button): can be used by JavaScript to respond to a user clicking it. It is useful for submitting form data.
 
 **Code**
-```html 
+
+```html
 <button>Click me</button>
 ```
 
@@ -97,28 +111,20 @@ The basic building block of an HTML document is the tag. A tag desicribes the co
   - img tags are VOID elements (self-closing)
 
 **Code**
+
 ```html
 <img
   src="url.com"
   alt="descriptive text about the image for web crawlers and assistive technologies"
->
+/>
 ```
-
-## Example
-
-**Code**
-
-```html
-<button>Click me</button>
-```
-
-**Result**
-<button>Click me</button>
-
-## Common Mistakes
 
 ## When to Use
 
+Use a tag when it accurately describes the meaning of the tag. Do not give something an h1 tag because it is supposed to look like an h1. Give the h1 a h1 tag and then if any other text needs to be bigger, just style it with CSS. Browsers and accessibility software rely on proper tag structure to scan the document.
+
 ## Interview Explanation
+
+An HTML tag is a label that tells the browser what something is - not how it looks.
 
 ## Related Concepts
